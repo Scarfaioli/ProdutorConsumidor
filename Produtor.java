@@ -1,14 +1,14 @@
 public class Produtor implements Runnable{
 
-    Noticia monitor;
+    NoticiaMonitor monitor;
 
-    public Produtor(Noticia monitor){
+    public Produtor(NoticiaMonitor monitor){
         this.monitor = monitor;
     }
 
     @Override
     public void run() {
-
+        while (true) monitor.publica(Integer.parseInt(Thread.currentThread().getName()), "null");
     }
     
 }

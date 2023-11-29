@@ -1,13 +1,14 @@
 public class Consumidor implements Runnable{
 
-    Noticia monitor;
+    NoticiaMonitor monitor;
 
-    public Consumidor(Noticia monitor){
+    public Consumidor(NoticiaMonitor monitor){
         this.monitor = monitor;
     }
+
     @Override
     public void run() {
-        throw new UnsupportedOperationException("Unimplemented method 'run'");
+        while (true) monitor.consome(Integer.parseInt(Thread.currentThread().getName()));
     }
 
 }

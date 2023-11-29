@@ -1,7 +1,8 @@
 public class Noticia {
     boolean wasSold = false;
     int id;
-    String produtor;
+    String owner;
+    final String produtor;
     String text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"+
      "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"+
      "ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit"+
@@ -11,6 +12,10 @@ public class Noticia {
     public Noticia(int id, String produtor) {
         this.id = id;
         this.produtor = produtor;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
      
 }

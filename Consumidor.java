@@ -1,12 +1,9 @@
 public class Consumidor implements Runnable{
 
-    Noticia[] noticias;
-    Consumidor(Noticia[] noticias){
-        this.noticias = noticias;
-    }
-
     @Override
     public void run() {
-        
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'run'");
     }
+
 }
